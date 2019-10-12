@@ -1,17 +1,32 @@
 import React from 'react';
-import './App.css';
-import {Link} from 'react-router-dom';
+import {Link} from  'react-router-dom';
+import './estilos/MeuHeader.css'
 
-function MeuHeader() {
-  return (
-    <div className="App">
-      <ul>
-          <li><Link to="/">  Home</Link></li>
-          <li><Link to="/sobre">  Sobre</Link></li>
-          <li><Link to="/contato">  Contato</Link></li>
-      </ul>
-    </div>
-  );
+class MeuHeader extends React.Component{
+
+  state = {
+    current: 'mail',
+  };
+
+  handleClick = e => {
+    this.setState({
+      current: e.key,
+    });
+  };
+
+  render(){
+    return (
+      <div>
+      <image src="" />
+        <nav id="menu">
+          <ul>
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/sobre">Sobre</Link></li>
+              <li><Link to="/contato">Contato</Link></li>
+          </ul>
+        </nav>
+      </div>
+    );
+  }
 }
-
 export default MeuHeader;
