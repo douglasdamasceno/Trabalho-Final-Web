@@ -1,0 +1,8 @@
+.contente-apresentacao{
+    background: #282c34 url('../assert/background-05.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-font-smoothing:antialiased !important;
+    height: 100%;
+
+}

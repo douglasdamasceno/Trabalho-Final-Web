@@ -1,33 +1,38 @@
 import React from 'react';
-import './App.css';
-import Sobre from './Sobre';
-import Contato from './Contato';
-import Pagina404 from  './Pagina404';
-import MeuHeader from './MeuHeader'
 
+import Sobre from './paginas/Sobre';
+import Home from './paginas/Home';
+import Contato from './paginas/Contato';
+import Pagina404 from  './paginas/Pagina404';
 
+import MeuHeader from './componentes/MeuHeader';
+import MeuFooter from './componentes/MeuFooter';
+
+import 'antd/dist/antd.css'; 
 import { BrowserRouter, Switch, Route} from 'react-router-dom';
+import { Layout} from 'antd';
+const { Content, Footer } = Layout;
+
+
 function App() {
   return (
-    <BrowserRouter>
-      <MeuHeader />
-          
-      <Switch>
-        <Route path="/" exact component={Home}/>
-        <Route path="/contato" component={Contato}/>
-        <Route path="/sobre" component={Sobre}/>
-        <Route path='*' component={Pagina404} />
-      </Switch>
+    <Layout > 
+      <BrowserRouter>
+        
+        <MeuHeader />
+        <Switch>
+          <Route path="/" exact component={Home}/>
+          <Route path="/contato" component={Contato}/>
+          <Route path="/sobre" component={Sobre}/>
+          <Route path='*' component={Pagina404} />
+        </Switch>
 
-      <h1>Meu Rodape</h1>
-    </BrowserRouter>  
+        </BrowserRouter>
+
+        <MeuFooter />
+      </Layout>      
+      
   );
 }
-
-
-const Home = ()=>{
-  return <h1>Home page</h1>
-}
-
 
 export default App;

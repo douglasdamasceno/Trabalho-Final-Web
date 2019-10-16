@@ -1,14 +1,15 @@
 import React from 'react';
-import './App.css';
+import '../App.css';
 
-function Contato() {
+function Sobre() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>Contatos dsfsdf</p>
+        <p>Sobre fksdmfksm</p>
+    
         </header>
     </div>
   );
 }
 
-export default Contato;
+export default Sobre;
