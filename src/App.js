@@ -11,7 +11,6 @@ import MeuFooter from './componentes/MeuFooter';
 import 'antd/dist/antd.css'; 
 import { BrowserRouter, Switch, Route} from 'react-router-dom';
 import { Layout} from 'antd';
-const { Content, Footer } = Layout;
 
 
 function App() {

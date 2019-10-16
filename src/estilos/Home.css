@@ -1,8 +1,22 @@
 .contente-apresentacao{
-    background: #282c34 url('../assert/background-05.jpg');
+    text-align: center;
+    height: 600px;
+    background: #282c34 url('../assert/background-02.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     -webkit-font-smoothing:antialiased !important;
-    height: 100%;
+   
 
+}
+.apresentacao{
+    font-size: 48px;
+    padding-top: 180px;
+    
+    color: #fff;
+    text-shadow:  #282c34 2px 2px;
+}
+.descricao{
+    font-size: 24px !important;
+    color:#fff;
+    text-shadow: #282c34 2px 2px;
 }
