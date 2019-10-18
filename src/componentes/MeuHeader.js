@@ -1,8 +1,10 @@
-import React from 'react';
+import  React from 'react';
 import {Link} from  'react-router-dom';
-import { Layout, Menu, Button } from 'antd';
-const { Header} = Layout;
+import ModalLoginUser from './ModalLoginUser';
 
+import 'antd/dist/antd.css'; 
+import { Layout, Menu, Button} from 'antd';
+const  { Header} = Layout;
 
 function MeuHeader(){
     return (
@@ -19,8 +21,12 @@ function MeuHeader(){
        <Menu.Item key="1"><Link to="/"> Home</Link></Menu.Item>
         <Menu.Item key="2"><Link to="/sobre">Sobre</Link></Menu.Item>
         <Menu.Item key="3"><Link to="/contato">Contato</Link></Menu.Item>
-        <Button className="btn_cadastra" type="danger" style={{marginLeft:'60%'}}>Get started</Button>
-      </Menu>
+        
+        <Button className="btn_cadastra" type="danger" style={{marginLeft:'60%'}}>Cadastra</Button>
+        <ModalLoginUser />        
+        
+        </Menu>
+        
     </Header>      
     );
 

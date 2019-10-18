@@ -1,17 +1,16 @@
 .contente-apresentacao{
     text-align: center;
-    height: 600px;
+    height: 650px;
     background: #282c34 url('../assert/background-02.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     -webkit-font-smoothing:antialiased !important;
-   
-
 }
+
+
 .apresentacao{
     font-size: 48px;
     padding-top: 180px;
-    
     color: #fff;
     text-shadow:  #282c34 2px 2px;
 }
@@ -19,4 +18,14 @@
     font-size: 24px !important;
     color:#fff;
     text-shadow: #282c34 2px 2px;
+}
+
+.buscar-atividades{
+    margin-top:11%;
+    height: 100px;
+    background-color: #05050ac7;
+}
+.ant-btn-primary{
+    background-color: rgb(219, 55, 66) !important;
+    border-color: rgb(219, 55, 66) !important;
 }
