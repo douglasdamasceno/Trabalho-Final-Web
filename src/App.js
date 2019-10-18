@@ -4,6 +4,7 @@ import Sobre from './paginas/Sobre';
 import Home from './paginas/Home';
 import Contato from './paginas/Contato';
 import Pagina404 from  './paginas/Pagina404';
+import LoginU from './paginas/Login';
 
 import MeuHeader from './componentes/MeuHeader';
 import MeuFooter from './componentes/MeuFooter';
@@ -23,6 +24,7 @@ function App() {
           <Route path="/" exact component={Home}/>
           <Route path="/contato" component={Contato}/>
           <Route path="/sobre" component={Sobre}/>
+          <Route path="/login" component={LoginU}/>
           <Route path='*' component={Pagina404} />
         </Switch>
 

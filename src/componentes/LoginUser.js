@@ -16,17 +16,19 @@ class LoginUser extends React.Component {
       }
     });
   };
-
+  
+  
   render() {
     const { getFieldDecorator } = this.props.form;
     return (
-      <Form onSubmit={this.handleSubmit} className="login-form" style={{maxWidth:'300px',backgroundColor:'#fff',padding:'10px'}}>
+      <Form onSubmit={this.handleSubmit} className="login-form" style={{width:'450px',backgroundColor:'#fff',padding:'10px'}}>
         <Form.Item>
           {getFieldDecorator('username', {
             rules: [{ required: true, message: 'Por favor, informe o email!' }],
           })(
             <Input
-              prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />}
+              prefix={<Icon type="user" 
+              style={{ color: 'rgba(0,0,0,.25)' }} />}
               type="email"
               placeholder="Email"
             />,
@@ -44,7 +46,12 @@ class LoginUser extends React.Component {
           )}
         </Form.Item>
         <Form.Item>
-          <Button style={{ width: '100%'}} type="default" htmlType="submit" className="login-form-button">
+          <Button 
+            style={{ width: '100%'}} 
+            type="default" 
+            htmlType="submit" 
+            className="login-form-button"
+            >
             Login
           </Button>
         </Form.Item>

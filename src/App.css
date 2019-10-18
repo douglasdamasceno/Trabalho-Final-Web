@@ -17,7 +17,7 @@ html,body,#root{
   height: 40vmin;
 }
 body{
-  background: red url('./assert/background-04.jpg');
+  background: #fff ;
   background-size: cover;
   background-repeat: no-repeat;
   -webkit-font-smoothing:antialiased !important;
