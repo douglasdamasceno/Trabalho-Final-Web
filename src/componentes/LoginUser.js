@@ -8,6 +8,7 @@ import { Form, Icon, Input, Button} from 'antd';
 
 
 class LoginUser extends React.Component {
+  
   handleSubmit = e => {
     e.preventDefault();
     this.props.form.validateFields((err, values) => {

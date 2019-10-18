@@ -21,7 +21,7 @@ function MeuHeader(){
         <Menu.Item key="2"><Link to="/sobre">Sobre</Link></Menu.Item>
         <Menu.Item key="3"><Link to="/contato">Contato</Link></Menu.Item>
         <Button className="btn_cadastra" type="danger" style={{marginLeft:'60%'}}>
-        <Link to="/login">Cadastra</Link></Button>
+        <Link to="/cadastro">Cadastra</Link></Button>
         </Menu>
         
     </Header>      
