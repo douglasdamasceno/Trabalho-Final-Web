@@ -1,10 +1,10 @@
 import React from 'react';
 import 'antd/dist/antd.css'; 
-import {Form,Input,Tooltip,Icon,Button} from 'antd';
+import {Form,Input,Button} from 'antd';
   
   
   
-  class RegistrationForm extends React.Component {
+  class ContatoForm extends React.Component {
     state = {
       confirmDirty: false,
       autoCompleteResult: [],
@@ -77,10 +77,7 @@ import {Form,Input,Tooltip,Icon,Button} from 'antd';
           <Form.Item
             label={
               <span>
-                Nome&nbsp;
-                <Tooltip title="What do you want others to call you?">
-                  <Icon type="question-circle-o" />
-                </Tooltip>
+                Nome
               </span>
             }
           >
@@ -103,39 +100,16 @@ import {Form,Input,Tooltip,Icon,Button} from 'antd';
               ],
             })(<Input />)}
           </Form.Item>
-          <Form.Item label="Senha" hasFeedback>
-            {getFieldDecorator('password', {
-              rules: [
-                {
-                  required: true,
-                  message: 'Por favor insera sua senha!',
-                },
-                {
-                  validator: this.validateToNextPassword,
-                },
-              ],
-            })(<Input.Password />)}
-          </Form.Item>
-          <Form.Item label="Confirmar Senha" hasFeedback>
-            {getFieldDecorator('confirm', {
-              rules: [
-                {
-                  required: true,
-                  message: 'Por favor confirme sua senha!',
-                },
-                {
-                  validator: this.compareToFirstPassword,
-                },
-              ],
-            })(<Input.Password onBlur={this.handleConfirmBlur} />)}
-          </Form.Item>
-          
-          
-          
-          
+            <Form.Item label={
+              <span>
+                Mensagem
+              </span>
+            }> 
+            <textarea className="ant-form" id="clienteMensagem" ></textarea>
+            </Form.Item>
             <Form.Item {...tailFormItemLayout}>
-            <Button type="primary" htmlType="submit">
-              Cadastrar
+            <Button type="ghost" htmlType="submit" className="meu-botao login-form-button ant-btn ant-btn-ghost">
+              Enviar Mensagem
             </Button>
           </Form.Item>
         </Form>
@@ -143,6 +117,6 @@ import {Form,Input,Tooltip,Icon,Button} from 'antd';
     }
   }
   
-  const WrappedRegistrationForm = Form.create({ name: 'register' })(RegistrationForm);
+  const WrappedRegistrationForm = Form.create({ name: 'register' })(ContatoForm);
   
   export default WrappedRegistrationForm;

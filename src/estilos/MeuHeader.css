@@ -1,3 +1,16 @@
-.btn_cadastro{
-    color:rgb(219, 55, 66) !important;
+.btn_cadastro .ant-menu-item{
+    color: bisque !important;
+    
+}
+
+li .ant-menu-item{
+    color:#fff !important;
+}        
+
+.ant-menu-horizontal > .ant-menu-item > a:hover{
+    color:#fff !important;    
+}
+.ant-menu-item-active{
+    
+    color:#fff !important;
 }

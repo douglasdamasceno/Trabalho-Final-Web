@@ -1,0 +1,54 @@
+.contente-cabecalho p{
+     font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: calc(10px + 2vmin);
+ }
+ 
+ .contente-cabecalho h2{
+     margin-top:100px;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px ;
+ }
+ 
+ .contente-contato{
+    width: 100%;
+    height: 500px;
+    background-color: white;
+}
+ .contente-form{
+     margin-top: 80px;
+    display: block;
+    float: left;
+    width: 45%;
+    height: 300px;
+    align-content: center;
+
+}
+.contente-contato textarea{
+    width: 400px;
+}
+.meu-botao{
+    align-self: auto;
+}
+
+.dados-contato{
+    float: left;
+    width: 45%;
+    display: block;
+    justify-content: left;
+    margin: 55px;
+    padding: 20px;
+    
+}
+.dados-contato p{
+    text-align: left;
+}
+
+h3{
+    font-size: 45px;
+ }
+.dados-contato h3{
+    font-size: 45px;
+    text-align: left;
+}
+
+

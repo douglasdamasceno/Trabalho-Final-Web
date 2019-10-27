@@ -24,7 +24,7 @@ body{
 }
 
 .App-header {
-  background-color: pink;
+  background-color:#fff;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

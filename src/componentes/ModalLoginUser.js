@@ -30,7 +30,8 @@ class ModalLoginUser extends React.Component {
   render() {
     return (
       <div>
-        <Button type="primary" onClick={this.showModal} size="large" >Get started</Button>
+        <Button className="btn_cadastro ant-btn ant-btn-primary" 
+        onClick={this.showModal} size="large" >Get started</Button>
         <Modal
           title="Realizar Login"
           visible={this.state.visible}

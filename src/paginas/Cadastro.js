@@ -1,6 +1,5 @@
 import React from 'react';
 import '../App.css';
-import LoginUser from '../componentes/LoginUser';
 import CadastroUser from '../componentes/CadastroUser';
 
 
