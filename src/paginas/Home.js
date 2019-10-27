@@ -1,8 +1,7 @@
 import React from 'react';
 import '../estilos/Home.css';
-import ModalLoginUser from '../componentes/ModalLoginUser';
 
-import { Layout , Input} from 'antd';
+import { Layout , Input, Icon } from 'antd';
 const { Content} = Layout;
 
 const { Search } = Input;
@@ -26,24 +25,36 @@ function Home() {
       
            </div>
         </div>   
-        <div>
-          <div>
-          TUDO DE MELHOR PARA VOCÊ
-Aproveite as Vantagens
+        <div className="contente-vantagens">
+          <div className=" contente-vantagens-cabecalho">
+          <h4>TUDO DE MELHOR PARA VOCÊ</h4>
+              <h2>Aproveite as Vantagens</h2>
           </div>
-          <div>
-
+          <div className=" contente-vantagens-conteudo">
+              
+              <div className=" contente-vantagens-conteudo-item">
+              
+              <Icon className="icon-vantagens" type="clock-circle" />
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              </div>
+              <div className=" contente-vantagens-conteudo-item">
+              <Icon className="icon-vantagens" type="environment" />
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+               </div>
+              <div className=" contente-vantagens-conteudo-item" >
+                <Icon className="icon-vantagens" type="like"  />
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              </div>
           </div>
         </div>
         <div className="contente-grupo">
             <div className="contente-informacoes">
-              <h3>A plataforma que alavanca os seus resultados profissionais</h3>
-              <p>A plataforma é uma solução 100% brasileira desenvolvida para identificar as 
-                competências de cada usuário. Nele,
-                você vai encontrar um conteúdo rico para o aprimoramento emocional
-                 e profissional.</p>
-              <p>Compreender o comportamento humano para proporcionar networking com
-                 profissionais e empresas é o nosso ponto focal.</p>
+              <h3>Bacon ipsum dolor amet lorem is simply dummy text of</h3>
+              <p>Bacon ipsum dolor amet tongue capicola prosciutto lorem 
+              Ipsum is simply dummy text of the printing and typesetting industry
+              .</p>
+              <p>Bacon ipsum dolor amet tongue capicola prosciutto,
+                 salami pancetta andouille shoulder leberkas pork.</p>
             </div>
             <div className="contente-imagem"> 
             </div>

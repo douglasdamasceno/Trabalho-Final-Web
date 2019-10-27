@@ -1,7 +1,9 @@
+
 .contente-cabecalho p{
      font-family: Georgia, 'Times New Roman', Times, serif;
    font-size: calc(10px + 2vmin);
- }
+
+}
  
  .contente-cabecalho h2{
      margin-top:100px;

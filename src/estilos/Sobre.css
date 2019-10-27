@@ -1,0 +1,28 @@
+.contente-sobre{
+    display: flex;
+    height: 240px;
+}
+
+.contente-historia{
+    width: 45%;
+    margin-left: 10%;
+    margin-right:20px ;
+}
+.contente-historia p{
+    text-align: justify;
+    font-size: 20px;
+    color: black;
+}
+.contente-valores p{
+    text-align: justify;
+    font-size: 20px;
+    color: black;
+}
+.contente-valores{
+    width: 45%;
+    margin-right: 10%;
+    margin-left:20px ;
+}
+
+
+
