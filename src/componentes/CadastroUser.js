@@ -1,10 +1,8 @@
 import React from 'react';
 import 'antd/dist/antd.css'; 
-import {Form,Input,Tooltip,Icon,Button} from 'antd';
+import {Form,Input,Button} from 'antd';
   
-  
-  
-  class RegistrationForm extends React.Component {
+class RegistrationForm extends React.Component {
     state = {
       confirmDirty: false,
       autoCompleteResult: [],
@@ -72,24 +70,19 @@ import {Form,Input,Tooltip,Icon,Button} from 'antd';
       
       return (
       
-        <Form {...formItemLayout} onSubmit={this.handleSubmit}>
+        <Form {...formItemLayout} onSubmit={this.handleSubmit} style={{width:'450px',
+        paddingLeft:'80px',paddingRight:'80px'}}>
           
           <Form.Item
-            label={
-              <span>
-                Nome&nbsp;
-                <Tooltip title="What do you want others to call you?">
-                  <Icon type="question-circle-o" />
-                </Tooltip>
-              </span>
-            }
+            label={""
+              }
           >
             {getFieldDecorator('nickname', {
               rules: [{ required: true, message: 'Por favor insera seu Nome!', whitespace: true }],
-            })(<Input />)}
+            })(<Input placeholder="Nome" style={{width:'300px'}}/>)}
           </Form.Item>
           
-          <Form.Item label="E-mail">
+          <Form.Item label="">
             {getFieldDecorator('email', {
               rules: [
                 {
@@ -101,9 +94,9 @@ import {Form,Input,Tooltip,Icon,Button} from 'antd';
                   message: 'Por favor insera seu E-mail!',
                 },
               ],
-            })(<Input />)}
+            })(<Input placeholder="Email" style={{width:'300px'}}/>)}
           </Form.Item>
-          <Form.Item label="Senha" hasFeedback>
+          <Form.Item label="" hasFeedback>
             {getFieldDecorator('password', {
               rules: [
                 {
@@ -114,9 +107,9 @@ import {Form,Input,Tooltip,Icon,Button} from 'antd';
                   validator: this.validateToNextPassword,
                 },
               ],
-            })(<Input.Password />)}
+            })(<Input.Password placeholder="Senha" style={{width:'300px'}}/>)}
           </Form.Item>
-          <Form.Item label="Confirmar Senha" hasFeedback>
+          <Form.Item label="" hasFeedback>
             {getFieldDecorator('confirm', {
               rules: [
                 {
@@ -127,11 +120,8 @@ import {Form,Input,Tooltip,Icon,Button} from 'antd';
                   validator: this.compareToFirstPassword,
                 },
               ],
-            })(<Input.Password onBlur={this.handleConfirmBlur} />)}
+            })(<Input.Password placeholder="Confirmar Senha" style={{width:'300px'}} onBlur={this.handleConfirmBlur} />)}
           </Form.Item>
-          
-          
-          
           
             <Form.Item {...tailFormItemLayout}>
             <Button type="primary" htmlType="submit">

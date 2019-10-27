@@ -12,16 +12,15 @@
  .contente-contato{
     width: 100%;
     height: 500px;
-    background-color: white;
+    background-color: #fff;
 }
  .contente-form{
-     margin-top: 80px;
+    margin-top: 80px;
     display: block;
     float: left;
     width: 45%;
     height: 300px;
     align-content: center;
-
 }
 .contente-contato textarea{
     width: 400px;
@@ -31,13 +30,13 @@
 }
 
 .dados-contato{
-    float: left;
+    float: right;
     width: 45%;
     display: block;
     justify-content: left;
     margin: 55px;
+    margin-top: 60px;
     padding: 20px;
-    
 }
 .dados-contato p{
     text-align: left;

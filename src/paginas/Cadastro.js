@@ -6,9 +6,13 @@ import CadastroUser from '../componentes/CadastroUser';
 function Cadastro() {
   return (
     <div className="App">
-      <header className="App-header">
-        <CadastroUser  />
-        </header>
+      <div className="App-header">
+        <div className="contente-login">
+          <h2>Realizar Cadastro</h2>
+      
+          <CadastroUser  /> 
+        </div>
+        </div>
     </div>
   );
 }

@@ -1,10 +1,9 @@
 import  React from 'react';
 import {Link} from  'react-router-dom';
 
-import Modal from './ModalLoginUser';
 
 import 'antd/dist/antd.css'; 
-import { Layout, Menu, Button} from 'antd';
+import { Layout, Menu} from 'antd';
 const  { Header} = Layout;
 
 function MeuHeader(){

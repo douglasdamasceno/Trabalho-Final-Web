@@ -105,7 +105,7 @@ import {Form,Input,Button} from 'antd';
                 Mensagem
               </span>
             }> 
-            <textarea className="ant-form" id="clienteMensagem" ></textarea>
+            <textarea className="ant-form" id="clienteMensagem" style={{height:'80px'}} ></textarea>
             </Form.Item>
             <Form.Item {...tailFormItemLayout}>
             <Button type="ghost" htmlType="submit" className="meu-botao login-form-button ant-btn ant-btn-ghost">

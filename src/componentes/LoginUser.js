@@ -22,7 +22,8 @@ class LoginUser extends React.Component {
   render() {
     const { getFieldDecorator } = this.props.form;
     return (
-      <Form onSubmit={this.handleSubmit} className="login-form" style={{width:'450px',backgroundColor:'#fff',padding:'10px'}}>
+      <Form onSubmit={this.handleSubmit} className="login-form" style={{width:'450px',
+      paddingLeft:'80px',paddingRight:'80px'}}>
         <Form.Item>
           {getFieldDecorator('username', {
             rules: [{ required: true, message: 'Por favor, informe o email!' }],
