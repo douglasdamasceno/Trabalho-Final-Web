@@ -6,6 +6,8 @@ import Contato from './paginas/Contato';
 import Pagina404 from  './paginas/Pagina404';
 import Cadastro from './paginas/Cadastro';
 import Login from './paginas/Login';
+import Buscar from './paginas/Buscar';
+
 import MeuHeader from './componentes/MeuHeader';
 import MeuFooter from './componentes/MeuFooter';
 
@@ -16,7 +18,7 @@ import { Layout} from 'antd';
 
 function App() {
   return (
-    <Layout> 
+    <Layout style={{backgroundColor:'#fff'}}> 
        <div>
       <BrowserRouter>
         <div>
@@ -28,6 +30,7 @@ function App() {
           <Route path="/sobre" component={Sobre}/>
           <Route path="/cadastro" component={Cadastro}/>
           <Route path="/login" component={Login}/>
+          <Route path="/buscar" component={Buscar}/>
           <Route path='*' component={Pagina404} />
         </Switch>
 

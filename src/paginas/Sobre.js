@@ -6,6 +6,9 @@ function Sobre() {
   return (
     <div className="App">
       <div className="App-header">
+        <div className="contente-sobre-cabecalho">
+          <h3>Sobre</h3>
+        </div>
       <div className="contente-sobre"> 
             <div className="contente-historia">
               <h2>HISTÓRIA, MISSÃO E VISÃO</h2>

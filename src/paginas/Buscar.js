@@ -4,7 +4,7 @@ import '../App.css';
 function Pagina404() {
   return (
 
-    <h1>Erro 404</h1>
+    <h1>Busca</h1>
    );
 }
 

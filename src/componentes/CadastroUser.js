@@ -125,7 +125,7 @@ class RegistrationForm extends React.Component {
           
             <Form.Item {...tailFormItemLayout}>
             <Button type="primary" htmlType="submit">
-              Cadastrar
+              Realizar Cadastro
             </Button>
           </Form.Item>
         </Form>
