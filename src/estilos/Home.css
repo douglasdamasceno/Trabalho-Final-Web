@@ -47,6 +47,7 @@
     display: inline-block;
     margin: 2%;
 }
+
 .contente-informacoes{
     margin:2% ;
     float: left;
@@ -93,29 +94,36 @@
 }
 
 .contente-vantagens-conteudo{
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .contente-vantagens-conteudo-item{
-    display: inline-block;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
     margin: 20px;
     height: 200px;    
-    justify-content: center;
-    box-shadow: black 1px 1px 2px;
-    border-radius: 8px;
+    border-radius: 10px;
+}
+
+.icon-vantagens{
+    flex: 1;
+    margin-top: 15px;
+    font-size: 80px;
+}
+
+.contente-vantagens-conteudo-item h4{
+    font-size: 20px;
+    text-align: center;
 }
 .contente-vantagens-conteudo-item p{
     text-align: center;
     margin: 15px;
-}
-.icon-vantagens{
-    align-self: center;
-    margin-top: 15px;
-    display: block;
-    margin-left:40%;
-    margin-right:50%;
-    font-size: 80px;
-}
 
+}
 
 

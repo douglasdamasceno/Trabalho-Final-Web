@@ -32,18 +32,21 @@ function Home() {
           </div>
           <div className=" contente-vantagens-conteudo">
               
-              <div className=" contente-vantagens-conteudo-item">
+              <div className="contente-vantagens-conteudo-item">
               
-              <Icon className="icon-vantagens" type="clock-circle" />
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <Icon className="icon-vantagens" type="clock-circle" />
+                <h4>Não Perca tempo</h4>
+                <p>Encontre atividades físicas de forma Rápido.</p>
               </div>
               <div className=" contente-vantagens-conteudo-item">
-              <Icon className="icon-vantagens" type="environment" />
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-               </div>
+                <Icon className="icon-vantagens" type="environment" />
+                <h4>Proximo de você</h4>
+                <p>Encontre atividades físicas proximo de você.</p>
+              </div>
               <div className=" contente-vantagens-conteudo-item" >
                 <Icon className="icon-vantagens" type="like"  />
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <h4>Diversão Garantida</h4>
+                <p>Saia da rotina e encontrarar Diversão e Entretenimento.</p>
               </div>
           </div>
         </div>

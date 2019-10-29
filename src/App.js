@@ -31,7 +31,7 @@ function App() {
           <Route path="/cadastro" component={Cadastro}/>
           <Route path="/login" component={Login}/>
           <Route path="/buscar" component={Buscar}/>
-          <Route path='*' component={Pagina404} />
+          <Route path='*' component={Home} />
         </Switch>
 
         </BrowserRouter>
