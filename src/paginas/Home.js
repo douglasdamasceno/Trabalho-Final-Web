@@ -52,7 +52,7 @@ function Home() {
         </div>
         <div className="contente-grupo">
             <div className="contente-informacoes">
-              <h3>Bacon ipsum dolor amet lorem is simply dummy text of</h3>
+              <h3>Lorem ipsum dolor amet lorem is simply dummy text of</h3>
               <p>Bacon ipsum dolor amet tongue capicola prosciutto lorem 
               Ipsum is simply dummy text of the printing and typesetting industry
               .</p>
