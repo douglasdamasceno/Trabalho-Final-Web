@@ -1,7 +1,7 @@
 
 # Trabalho Final de WEB
 
-Sistema desenvolvido para o trabalho final da disciplina de de Desenvolvimento de Sistemas WEB, sistema de atividade físicas onde os usúarios podem realizar o cadastro, e buscar por ativdades físicas e/ou lazer próxima a ele.
+Sistema desenvolvido para o trabalho final da disciplina de Desenvolvimento de Sistemas WEB, sistema de atividade físicas onde os usúarios podem realizar o cadastro, e buscar por ativdades físicas e/ou lazer próxima a ele.
 
 * CRUD e Autentificação de usuários
 
