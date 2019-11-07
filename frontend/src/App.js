@@ -3,7 +3,6 @@ import React from 'react';
 import Sobre from './paginas/Sobre';
 import Home from './paginas/Home';
 import Contato from './paginas/Contato';
-import Pagina404 from  './paginas/Pagina404';
 import Cadastro from './paginas/Cadastro';
 import Login from './paginas/Login';
 import Buscar from './paginas/Buscar';
