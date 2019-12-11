@@ -1,14 +1,19 @@
 // rotas
-var controller = require('../controllers/atividade_controller')();
+var controllerAtividade = require('../controllers/atividade_controller')();
+var controllerUsuario = require('../controllers/usuario_controller')();
 
 module.exports = function(app) {
-	app.get('/atividades', controller.atividades);
-	
-	app.get('/atividades/:id', controller.getAtividade);
-	
-	app.post('/atividades', controller.novo);
+	app.get('/atividades', controllerAtividade.atividades);
+	app.get('/atividades/:id', controllerAtividade.getAtividade);
+	app.post('/atividades', controllerAtividade.novo);
+	app.put('/atividades/:id', controllerAtividade.atualiza);
+	app.delete('/atividades/:id', controllerAtividade.deleta);
 
-	app.put('/atividades/:id', controller.atualiza);
+	
+	app.post('/usuarios', controllerUsuario.novo);
+	app.get('/usuarios', controllerUsuario.usuarios);
+	app.get('/usuarios/:id', controllerUsuario.getUsuario);
+	app.put('/usuarios/:id', controllerUsuario.atualiza);
+	app.delete('/usuarios/:id', controllerUsuario.deleta);
 
-	app.delete('/atividades/:id', controller.deleta);
 }

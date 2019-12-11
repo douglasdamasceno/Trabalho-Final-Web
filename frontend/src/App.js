@@ -19,10 +19,11 @@ function App() {
   return (
     <Layout style={{backgroundColor:'#fff'}}> 
        <div>
-      <BrowserRouter>
+      <BrowserRouter >
         <div>
-          <MeuHeader />
-        </div>
+        <MeuHeader />
+        
+          </div>
            <Switch>
           <Route path="/" exact component={Home}/>
           <Route path="/contato" component={Contato}/>

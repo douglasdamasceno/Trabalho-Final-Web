@@ -11,7 +11,6 @@ function Login() {
           
         <div className="contente-login"> 
         <h2>Entre na Sua Conta</h2>
-      
           <LoginUser  />
           <p>Ainda não possui conta? <Link to="/cadastro">Cadastre-se agora.</Link></p>
         </div>

@@ -5,7 +5,6 @@ var cors = require('cors');
 
 module.exports = function() {
 	var app = express();
-	app.use(bodyParser.json());
 	 
 	// configurações
 	app.use(cors());
@@ -14,6 +13,7 @@ module.exports = function() {
 	app.set('views', './app/views');
 
 	// middleware
+	app.use(bodyParser.json());
 	app.use(bodyParser.urlencoded({extended: false}));
 	app.use(express.static('./public'));
 

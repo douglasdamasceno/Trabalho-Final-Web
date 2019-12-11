@@ -1,6 +1,5 @@
 import React from 'react';
 import '../estilos/Home.css';
-
 import { Layout , Input, Icon } from 'antd';
 const { Content} = Layout;
 
@@ -10,6 +9,7 @@ const { Search } = Input;
 function Home() {
   return (
       <Content>
+        
         <div className="contente-apresentacao">
              <div>
               <h1 className="apresentacao">Levante-se e comece agora</h1>

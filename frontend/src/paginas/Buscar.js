@@ -1,10 +1,15 @@
 import React from 'react';
+
 import { Layout, Menu, Icon } from 'antd';
+import CriarAtividade from '../componentes/atividades/CriarAtividade';
 
 const { SubMenu } = Menu;
 const { Content, Sider } = Layout;
 
 function Buscar(){
+  return(<Atividade />);
+}
+const Atividade = ()=>{
   return(   
     <Layout>
       <Sider width={200} style={{ background: '#fff' }}>
@@ -45,12 +50,11 @@ function Buscar(){
             minHeight: 400,
           }}
         >
-          Content
-        </Content>
+          <CriarAtividade />
+    </Content>
       </Layout>
     </Layout>
   );
 }
-
 
 export default Buscar;

@@ -1,7 +1,8 @@
 import React from 'react';
 import 'antd/dist/antd.css'; 
 import {Form,Input,Button} from 'antd';
-  
+import axios from 'axios';
+
 class RegistrationForm extends React.Component {
     state = {
       confirmDirty: false,
@@ -12,7 +13,18 @@ class RegistrationForm extends React.Component {
       e.preventDefault();
       this.props.form.validateFieldsAndScroll((err, values) => {
         if (!err) {
-          console.log('Received values of form: ', values);
+          console.log('Valor do form: ', values);
+          const obj = {
+            nome: values.nickname,
+            email: values.email,
+            senha: values.password,
+          };
+          console.log('objeto: ', obj);
+          axios.post('http://localhost:3333/usuarios', obj)
+          .then(res => console.log(res.data));
+          
+          this.props.history.push('/index');
+          
         }
       });
     };
